@@ -102,6 +102,43 @@
       color: #1e3a52;
     }
 
+    .greeting-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      border: 3px solid #b8d8f0;
+      box-shadow: 0 4px 16px rgba(46, 111, 163, 0.15);
+      flex-shrink: 0;
+      background: #eaf4fb;
+      overflow: hidden;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .greeting-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1e3a52;
+      letter-spacing: 0.05em;
+    }
+
+    .greeting-sub {
+      font-size: 0.85rem;
+      color: #7aafc8;
+      margin-top: 2px;
+    }
+
     .message {
       font-size: 0.97rem;
       color: #4a6070;
@@ -184,6 +221,15 @@
 
     <div class="card">
       <h2>ご挨拶</h2>
+      <div class="greeting-header">
+        <div class="avatar">
+          <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=shibata-tetsuya&backgroundColor=b6e3f4&clothingColor=2e6fa3" alt="柴田哲也のアバター">
+        </div>
+        <div>
+          <div class="greeting-name">柴田 哲也</div>
+          <div class="greeting-sub">税理士 ／ 哲也事務所</div>
+        </div>
+      </div>
       <p class="message">
         はじめまして。税理士の柴田哲也です。<br>
         哲也事務所では、個人・法人を問わず、税務申告・記帳代行・経営相談など、
